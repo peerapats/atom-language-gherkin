@@ -1,4 +1,4 @@
-atom-language-gherkin
-=====================
+Gherkin Language Support for Atom
+=================================
 
-Gherkin language support for Atom
+This package provide syntax highlight for gherkin language file (.feature) in Atom editor.
