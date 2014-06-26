@@ -25,17 +25,22 @@
         "name": 'comment.line.number-sign.gherkin'
     }
     {
+        "comment": 'Element Tag'
+        "match": '(\\<\\w+\\>)'
+        "name": 'constant.character.escape.feature'
+    }
+    {
         "comment": 'Single quote string'
-        "match": "(\\'[^']*\\')"
+        "match": "(\\'.*\\')"
         "name": 'string.single.qoute.gherkin'
     }
     {
         "comment": 'Double quote string'
-        "match": '(\\"[^"]*\\")'
+        "match": '(\\".*\\")'
         "name": 'string.double.qoute.gherkin'
     }
     {
-        "comment": 'Variable'
+        "comment": 'Indexing'
         "match": '(\\[.*\\])'
         "name": 'constant.numeric.gherkin'
     }
