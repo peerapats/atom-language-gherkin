@@ -1,47 +1,38 @@
 "fileTypes": [
     'feature'
 ]
-
 "name": 'Gherkin'
 "patterns": [
     {
-        "comment": 'Feature keyword'
         "match": '\\s*(Scenario\\:|Feature\\:|Scenario Outline\\:|Background\\:|Examples\\:)'
         "name": 'keyword.gherkin'
     }
     {
-        "comment": 'Step keyword'
         "match": '\\s*(Given|Then|When|And|But)'
-        "name": 'support.class.tag.gherkin'
+        "name": 'support.class.gherkin'
     }
     {
-        "comment": 'Tag'
         "match": '\\s*(@[A-Za-z0-9_\\-]+)'
         "name": 'entity.name.function.decorator.gherkin'
     }
     {
-        "comment": 'Line comment'
-        "match": '(\\#.*\\n?)'
-        "name": 'comment.line.number-sign.gherkin'
+        "match": '#(.*)$'
+        "name": 'comment.line.gherkin'
     }
     {
-        "comment": 'Element Tag'
         "match": '(\\<\\w+\\>)'
         "name": 'constant.character.escape.feature'
     }
     {
-        "comment": 'Single quote string'
         "match": "(\\'.*\\')"
         "name": 'string.single.qoute.gherkin'
     }
     {
-        "comment": 'Double quote string'
         "match": '(\\".*\\")'
         "name": 'string.double.qoute.gherkin'
     }
     {
-        "comment": 'Indexing'
-        "match": '(\\[.*\\])'
+        "match": '(\\[[^]]*\\])'
         "name": 'constant.numeric.gherkin'
     }
 ]
