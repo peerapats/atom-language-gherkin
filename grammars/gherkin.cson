@@ -24,11 +24,11 @@
         "name": 'constant.character.escape.feature'
     }
     {
-        "match": "(\\'.*\\')"
+        "match": "(\\'.*?[^\\']\\')"
         "name": 'string.single.qoute.gherkin'
     }
     {
-        "match": '(\\".*\\")'
+        "match": '(\\".*?[^\\"]\\")'
         "name": 'string.double.qoute.gherkin'
     }
     {
