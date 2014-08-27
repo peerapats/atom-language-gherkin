@@ -35,5 +35,9 @@
         "match": '(\\[[^]]*\\])'
         "name": 'constant.numeric.gherkin'
     }
+    {
+        "match": '\\|\\s(.*)\\s\\|'
+        "name": 'constant.character.escape.feature'
+    }
 ]
 'scopeName': 'source.feature'
