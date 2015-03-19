@@ -8,6 +8,12 @@ Support gherkin on following file type:
 
 ## Example
 
-Please see in screenshots.
+Feature file.
+
+![feature-syntax ](https://raw.githubusercontent.com/gigapixel/atom-language-gherkin/master/screenshots/feature-syntax.png)
+
+Robot File.
+
+![robot-syntax](https://raw.githubusercontent.com/gigapixel/atom-language-gherkin/master/screenshots/robot-syntax.png)
 
 __NOTE__: Syntax color best match with Atom `One Dark` theme.
