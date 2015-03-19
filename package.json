@@ -1,6 +1,6 @@
 {
   "name": "language-gherkin",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Gherkin language support for Atom",
   "repository": "https://github.com/gigapixel/atom-language-gherkin",
   "license": "MIT",
