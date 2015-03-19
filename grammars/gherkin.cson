@@ -1,10 +1,32 @@
 "fileTypes": [
-    'feature'
+    'feature',
+    'robot'
 ]
 "name": 'Gherkin'
 "patterns": [
     {
+        "match": '#(.*)$'
+        "name": 'comment.line.gherkin'
+    }
+    {
+        "match": '^\\.\\.\\.(.*)$'
+        "name": 'comment.line.gherkin'
+    }
+    {
+        "match": '(^\\*\\*\\*.*?\\*\\*\\*)|((?<=^\\|)\\s+\\*\\*\\*.*?\\*\\*\\*)'
+        "name": 'support.class.gherkin'
+    }
+    {
+        "match": '(\\$\\{.*?\\})|(@\\{.*?\\})'
+        "name": 'string.single.qoute.gherkin'
+    }
+    {
         "match": '\\s*(Scenario\\:|Feature\\:|Scenario Outline\\:|Background\\:|Examples\\:)'
+        "name": 'keyword.gherkin'
+    }
+    {
+        "begin": '(^[^ \\t\\*\\n\\|]+)|((?<=^\\|)\\s+[^ \\t\\*\\n\\|]+)'
+        "end": '\\s{2}|\\t|$|\\s+(?=\\|)'
         "name": 'keyword.gherkin'
     }
     {
@@ -16,8 +38,8 @@
         "name": 'entity.name.function.decorator.gherkin'
     }
     {
-        "match": '#(.*)$'
-        "name": 'comment.line.gherkin'
+        "match": '\\s(\\d*)\\s'
+        "name": 'entity.name.function.decorator.gherkin'
     }
     {
         "match": '(\\<\\w+\\>)'
@@ -32,12 +54,16 @@
         "name": 'string.double.qoute.gherkin'
     }
     {
+        "match": "\\[(\\'.*?[^\\']\\')\\]"
+        "name": 'constant.character.escape.feature'
+    }
+    {
         "match": '(\\[[^]]*\\])'
         "name": 'constant.numeric.gherkin'
     }
     {
         "match": '\\|\\s(.*)\\s\\|'
-        "name": 'constant.character.escape.feature'
+        "name": 'constant.numeric.gherkin'
     }
 ]
-'scopeName': 'source.feature'
+"scopeName": 'source.feature'
