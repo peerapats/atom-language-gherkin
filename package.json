@@ -4,6 +4,7 @@
   "description": "Gherkin language support for Atom",
   "repository": "https://github.com/gigapixel/atom-language-gherkin",
   "license": "MIT",
+  "files" : [ "grammars", "settings" ],
   "engines": {
     "atom": ">=0.50.0"
   },
