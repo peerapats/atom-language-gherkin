@@ -25,17 +25,17 @@
         "name": 'keyword.gherkin'
     }
     {
-        "begin": '(^[^ \\t\\*\\n\\|]+)|((?<=^\\|)\\s+[^ \\t\\*\\n\\|]+)'
-        "end": '\\s{2}|\\t|$|\\s+(?=\\|)'
-        "name": 'keyword.gherkin'
-    }
-    {
         "match": '\\s*(Given|Then|When|And|But)'
         "name": 'support.class.gherkin'
     }
     {
         "match": '(?<=\\s|^)(@[A-Za-z0-9_\\-]+)'
         "name": 'entity.name.function.decorator.gherkin'
+    }
+    {
+        "begin": '(^[^ \\t\\*\\n\\|]+)|((?<=^\\|)\\s+[^ \\t\\*\\n\\|]+)'
+        "end": '\\s{2}|\\t|$|\\s+(?=\\|)'
+        "name": 'keyword.gherkin'
     }
     {
         "match": '\\s(\\d*)\\s'
@@ -46,11 +46,11 @@
         "name": 'constant.character.escape.feature'
     }
     {
-        "match": "(\\'.*?[^\\']\\')"
+        "match": "(\\s\\'.*?[^\\']\\'\\s)"
         "name": 'string.single.qoute.gherkin'
     }
     {
-        "match": '(\\".*?[^\\"]\\")'
+        "match": '(\\s\\".*?[^\\"]\\"\\s)'
         "name": 'string.double.qoute.gherkin'
     }
     {
