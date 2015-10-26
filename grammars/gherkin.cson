@@ -33,11 +33,6 @@
         "name": 'entity.name.function.decorator.gherkin'
     }
     {
-        "begin": '(^[^ \\t\\*\\n\\|]+)|((?<=^\\|)\\s+[^ \\t\\*\\n\\|]+)'
-        "end": '\\s{2}|\\t|$|\\s+(?=\\|)'
-        "name": 'keyword.gherkin'
-    }
-    {
         "match": '\\s(\\d*)\\s'
         "name": 'entity.name.function.decorator.gherkin'
     }
@@ -62,7 +57,7 @@
         "name": 'constant.numeric.gherkin'
     }
     {
-        "match": '\\|\\s(.*)\\s\\|'
+        "match": '\\|(.+\\|)+'
         "name": 'constant.numeric.gherkin'
     }
 ]
