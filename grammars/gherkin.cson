@@ -50,7 +50,7 @@
         "name": 'string.single.qoute.gherkin'
     }
     {
-        "match": '(\\s\\".*?[^\\"]\\"\\s)'
+        "match": '(\\".*?[^\\"]\\")'
         "name": 'string.double.qoute.gherkin'
     }
     {
