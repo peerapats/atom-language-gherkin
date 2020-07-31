@@ -21,7 +21,7 @@
         "name": 'string.single.qoute.gherkin'
     }
     {
-        "match": '\\s*(Scenario\\:|Feature\\:|Scenario Outline\\:|Background\\:|Examples\\:)'
+        "match": '\\s*(Scenario\\:|Feature\\:|Rule\\:|Scenario Template\\:|Scenario Outline\\:|Background\\:|Example\\:|Examples\\:)'
         "name": 'keyword.gherkin'
     }
     {
